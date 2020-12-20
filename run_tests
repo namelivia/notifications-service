@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec notifications-service pipenv run pytest

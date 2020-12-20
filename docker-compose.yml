@@ -1,0 +1,33 @@
+version: '3'
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: notifications-service
+    restart: unless-stopped
+    tty: true
+    working_dir: /app
+    ports:
+      - "80:80"
+      - "4444:4444"
+    volumes:
+      - ./:/app
+    command: [
+        "pipenv",
+        "run",
+        "uvicorn",
+        "app.main:app",
+        "--reload",
+        "--host=0.0.0.0",
+        "--port=80"
+    ]
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
