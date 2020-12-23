@@ -10,9 +10,8 @@ import sys
 
 app = FastAPI()
 
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logger = logging.getLogger(__name__)
-logger.addHandler(logging.StreamHandler(sys.stdout))
-logger.setLevel(logging.INFO)
 
 
 class Settings(BaseSettings):
@@ -41,6 +40,7 @@ def notification(
     message: MessageRequest
 ):
     try:
+        logger.error(f"Sending notification for Telegram")
         Telegram(
             token=os.getenv("TELEGRAM_API_ID"),
             chat_id=os.getenv('TELEGRAM_CHAT_ID')
