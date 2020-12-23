@@ -5,8 +5,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from .schemas import MessageRequest
 from http import HTTPStatus
 from .services.telegram import Telegram
+import logging
+import sys
 
 app = FastAPI()
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logging.StreamHandler(sys.stdout))
+logger.setLevel(logging.INFO)
 
 
 class Settings(BaseSettings):
@@ -34,8 +40,12 @@ app.add_middleware(
 def notification(
     message: MessageRequest
 ):
-    Telegram(
-        token=os.getenv("TELEGRAM_API_ID"),
-        chat_id=os.getenv('TELEGRAM_CHAT_ID')
-    ).send(message.message)
-    return Response(status_code=HTTPStatus.OK)
+    try:
+        Telegram(
+            token=os.getenv("TELEGRAM_API_ID"),
+            chat_id=os.getenv('TELEGRAM_CHAT_ID')
+        ).send(message.message)
+        return Response(status_code=HTTPStatus.OK)
+    except Exception as err:
+        logger.error(f"Telegram notification could not be sent: {str(err)}")
+        return Response(status_code=HTTPStatus.INTERNAL_SERVER_ERROR)
