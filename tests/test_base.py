@@ -3,7 +3,7 @@ import pytest
 from fastapi.testclient import TestClient
 from app.main import app
 
-os.environ['TESTING'] = 'True'
+os.environ["TESTING"] = "True"
 
 
 @pytest.fixture(scope="module")

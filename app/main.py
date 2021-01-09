@@ -22,9 +22,7 @@ class Settings(BaseSettings):
         case_sensitive = True
 
 
-origins = [
-    'http://localhost:8080'
-]
+origins = ["http://localhost:8080"]
 
 app.add_middleware(
     CORSMiddleware,
@@ -36,14 +34,11 @@ app.add_middleware(
 
 
 @app.post("/notification", status_code=HTTPStatus.OK)
-def notification(
-    message: MessageRequest
-):
+def notification(message: MessageRequest):
     try:
         logger.error(f"Sending notification for Telegram")
         Telegram(
-            token=os.getenv("TELEGRAM_API_ID"),
-            chat_id=os.getenv('TELEGRAM_CHAT_ID')
+            token=os.getenv("TELEGRAM_API_ID"), chat_id=os.getenv("TELEGRAM_CHAT_ID")
         ).send(message.message)
         return Response(status_code=HTTPStatus.OK)
     except Exception as err:

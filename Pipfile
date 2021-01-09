@@ -8,6 +8,8 @@ pytest = "*"
 mock = "*"
 pytest-cov = "*"
 pudb = "*"
+black = "*"
+pre-commit = "*"
 
 [packages]
 fastapi = "*"
@@ -21,3 +23,6 @@ python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
