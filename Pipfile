@@ -10,6 +10,7 @@ pytest-cov = "*"
 pudb = "*"
 black = "*"
 pre-commit = "*"
+codecov = "*"
 
 [packages]
 fastapi = "*"
