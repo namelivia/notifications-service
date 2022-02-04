@@ -236,11 +236,11 @@
         },
         "setuptools": {
             "hashes": [
-                "sha256:b83cf328a4f6a987c95610e76b29a30778db05174eef71f771776c48f8f25d1b",
-                "sha256:f6871e8aba174d1e22f576c7a471d8460e226b8424b0f2e929a13330b8b83118"
+                "sha256:a4dc3af29a67e7a45620aba43dde2c1af2dd6bc49726d78168f0cc6c4fb0c01b",
+                "sha256:c9097cbcdefe88a64da966a764f2d95feb1cfaff77cc304528a23cefe3359d9a"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==60.7.0"
+            "version": "==60.7.1"
         },
         "six": {
             "hashes": [
@@ -347,11 +347,11 @@
         },
         "uvicorn": {
             "hashes": [
-                "sha256:8b16d9ecb76500f7804184f182835fe8a2b54716d3b0b6bb2da0b2b192f62c73",
-                "sha256:dffbacb8cc25d924d68d231d2c478c4fe6727c36537d8de21e5de591b37afc41"
+                "sha256:3ab1bf48aa512692db93a91c514576a0739a9d3522827e1656a172ee87118fa5",
+                "sha256:3cebddac78c7dd6bfce2f8f838c2c9b0cfcf3dddf417315ba62378ebe7e8fae2"
             ],
             "index": "pypi",
-            "version": "==0.17.1"
+            "version": "==0.17.3"
         },
         "uvloop": {
             "hashes": [
@@ -455,6 +455,9 @@
             "version": "==2.1.12"
         },
         "coverage": {
+            "extras": [
+                "toml"
+            ],
             "hashes": [
                 "sha256:1245ab82e8554fa88c4b2ab1e098ae051faac5af829efdcf2ce6b34dccd5567c",
                 "sha256:1bc6d709939ff262fd1432f03f080c5042dc6508b6e0d3d20e61dd045456a1a0",
@@ -518,11 +521,11 @@
         },
         "identify": {
             "hashes": [
-                "sha256:8408f01e0be25492017346d7dffe7e7711b762b23375c775d24d3bc38618fabc",
-                "sha256:e64210654dfbca6ced33230eb1b137591a0981425e1a60b4c6c36309f787bbd5"
+                "sha256:97e839c1779f07011b84c92af183e1883d9745d532d83412cca1ca76d3808c1c",
+                "sha256:a55bdd671b6063eb837af938c250ec00bba6e610454265133b0d2db7ae718d0f"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2.4.7"
+            "version": "==2.4.8"
         },
         "idna": {
             "hashes": [
