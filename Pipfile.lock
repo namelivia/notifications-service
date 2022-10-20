@@ -18,11 +18,11 @@
     "default": {
         "anyio": {
             "hashes": [
-                "sha256:413adf95f93886e442aea925f3ee43baa5a765a64a0f52c6081894f9992fdd0b",
-                "sha256:cb29b9c70620506a9a8f87a309591713446953302d7d995344d0d7c6c0c9a7be"
+                "sha256:25ea0d673ae30af41a0c442f81cf3b38c7e79fdc7b60335a4c14e05eb0947421",
+                "sha256:fbbe32bd270d2a2ef3ed1c5d45041250284e31fc0a4df4a5a6071842051a51e3"
             ],
             "markers": "python_full_version >= '3.6.2'",
-            "version": "==3.6.1"
+            "version": "==3.6.2"
         },
         "apscheduler": {
             "hashes": [
@@ -224,10 +224,10 @@
         },
         "pytz": {
             "hashes": [
-                "sha256:2c0784747071402c6e99f0bafdb7da0fa22645f06554c7ae06bf6358897e9c91",
-                "sha256:48ce799d83b6f8aab2020e369b627446696619e79645419610b9facd909b3174"
+                "sha256:335ab46900b1465e714b4fda4963d87363264eb662aab5e65da039c25f1f5b22",
+                "sha256:c4d88f472f54d615e9cd582a5004d1e5f624854a6a27a6211591c251f22a6914"
             ],
-            "version": "==2022.4"
+            "version": "==2022.5"
         },
         "pytz-deprecation-shim": {
             "hashes": [
@@ -358,11 +358,11 @@
         },
         "uvicorn": {
             "hashes": [
-                "sha256:0abd429ebb41e604ed8d2be6c60530de3408f250e8d2d84967d85ba9e86fe3af",
-                "sha256:9a66e7c42a2a95222f76ec24a4b754c158261c4696e683b9dadc72b590e0311b"
+                "sha256:cc277f7e73435748e69e075a721841f7c4a95dba06d12a72fe9874acced16f6f",
+                "sha256:cf538f3018536edb1f4a826311137ab4944ed741d52aeb98846f52215de57f25"
             ],
             "index": "pypi",
-            "version": "==0.18.3"
+            "version": "==0.19.0"
         },
         "uvloop": {
             "hashes": [
@@ -479,9 +479,6 @@
             "version": "==2.1.12"
         },
         "coverage": {
-            "extras": [
-
-            ],
             "hashes": [
                 "sha256:027018943386e7b942fa832372ebc120155fd970837489896099f5cfa2890f79",
                 "sha256:11b990d520ea75e7ee8dcab5bc908072aaada194a794db9f6d7d5cfd19661e5a",
